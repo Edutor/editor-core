@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        gradlew test
+        sh "./gradlew test"
       }
     }
   }
